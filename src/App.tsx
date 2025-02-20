@@ -1,3 +1,4 @@
+import AboutSection from './components/sections/AboutSection';
 import HeroSection from './components/sections/HeroSection';
 import MissionSection from './components/sections/MissionSection';
 import Navbar from './components/sections/Navbar';
@@ -11,6 +12,7 @@ function App() {
 				<HeroSection />
 				<StatsSection />
 				<MissionSection />
+				<AboutSection />
 			</main>
 		</>
 	);
