@@ -1,5 +1,6 @@
 import AboutSection from './components/sections/AboutSection';
 import DonationSection from './components/sections/DonationSection';
+import Footer from './components/sections/Footer';
 import FoundationActivities from './components/sections/FoundationActivities';
 import HeroSection from './components/sections/HeroSection';
 import MissionSection from './components/sections/MissionSection';
@@ -24,6 +25,7 @@ function App() {
 				<FoundationActivities />
 				<DonationSection />
 			</main>
+			<Footer />
 		</>
 	);
 }
