@@ -1,4 +1,5 @@
 import AboutSection from './components/sections/AboutSection';
+import FoundationActivities from './components/sections/FoundationActivities';
 import HeroSection from './components/sections/HeroSection';
 import MissionSection from './components/sections/MissionSection';
 import Navbar from './components/sections/Navbar';
@@ -19,6 +20,7 @@ function App() {
 				<ProgramsSection />
 				<ValueSection />
 				<VolunteerSection />
+				<FoundationActivities />
 			</main>
 		</>
 	);
