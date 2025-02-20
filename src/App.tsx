@@ -1,10 +1,13 @@
+import HeroSection from './components/sections/HeroSection';
 import Navbar from './components/sections/Navbar';
 
 function App() {
 	return (
 		<>
 			<Navbar />
-			<main></main>
+			<main>
+				<HeroSection />
+			</main>
 		</>
 	);
 }
