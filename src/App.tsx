@@ -4,6 +4,8 @@ import MissionSection from './components/sections/MissionSection';
 import Navbar from './components/sections/Navbar';
 import ProgramsSection from './components/sections/ProgramSection';
 import StatsSection from './components/sections/StatsSection';
+import ValueSection from './components/sections/ValueSection';
+import VolunteerSection from './components/sections/VolunteerSection';
 
 function App() {
 	return (
@@ -15,6 +17,8 @@ function App() {
 				<MissionSection />
 				<AboutSection />
 				<ProgramsSection />
+				<ValueSection />
+				<VolunteerSection />
 			</main>
 		</>
 	);

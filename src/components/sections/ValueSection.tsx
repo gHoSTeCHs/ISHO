@@ -6,7 +6,7 @@ const ValueSection: React.FC = () => {
 		<section className="bg-navy-900 text-white py-16 px-6 relative overflow-hidden">
 			<div className="container mx-auto relative z-10">
 				<div className="max-w-2xl">
-					<h2 className="text-3xl md:text-4xl font-bold leading-tight">
+					<h2 className="text-black text-3xl md:text-4xl font-bold leading-tight">
 						Helping Children Never Doubt that They are Valuable & Powerful
 					</h2>
 					<p className="mt-4 text-gray-300">
@@ -18,7 +18,7 @@ const ValueSection: React.FC = () => {
 						<Button variant="secondary">Donate Now</Button>
 						<Button
 							variant="outline"
-							className="bg-transparent text-white hover:bg-white hover:bg-opacity-10">
+							className="bg-transparent text-black hover:bg-black/80 hover:bg-opacity-10">
 							Learn More
 						</Button>
 					</div>
@@ -27,7 +27,7 @@ const ValueSection: React.FC = () => {
 
 			{/* Decorative line */}
 			<svg
-				className="absolute bottom-0 right-0 w-full md:w-1/2 h-32 text-white opacity-10"
+				className="absolute bottom-0 right-0 w-full md:w-1/2 h-32 text-black opacity-10"
 				viewBox="0 0 400 100"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg">
