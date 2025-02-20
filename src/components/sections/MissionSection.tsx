@@ -2,16 +2,15 @@ import React from 'react';
 
 const MissionSection: React.FC = () => {
 	return (
-		<section className="bg-navy-900 text-white py-12 px-6">
+		<section className="bg-navy-900  py-12 px-6">
 			<div className="container mx-auto">
 				<div className="mb-8">
-					<p className="text-coral-400 font-medium">Who We Work</p>
+					<p className="font-medium">Who We Work</p>
 					<p className="mt-6 max-w-3xl">
-						The Open Society <span className="text-coral-400">Foundations</span>{' '}
-						are active in more than 120 countries around the world, using
-						grant-giving, research, advocacy, impact investment, and strategic
-						litigation to support the development of inclusive and vibrant
-						democracies.
+						The Open Society <span className="">Foundations</span> are active in
+						more than 120 countries around the world, using grant-giving,
+						research, advocacy, impact investment, and strategic litigation to
+						support the development of inclusive and vibrant democracies.
 					</p>
 				</div>
 

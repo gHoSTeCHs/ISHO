@@ -8,7 +8,7 @@ const AboutSection: React.FC = () => {
 				<div className="flex flex-col md:flex-row gap-12">
 					<div className="md:w-1/3">
 						<img
-							src="/api/placeholder/400/500"
+							src="https://placehold.co/400x500"
 							alt="Children smiling"
 							className="w-full h-auto object-cover rounded-lg"
 						/>

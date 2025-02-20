@@ -17,7 +17,7 @@ const Logo: React.FC = () => {
 					strokeLinecap="round"
 				/>
 			</svg>
-			<span className="font-bold text-xl">Found</span>
+			<span className="font-bold text-xl">ISHO</span>
 		</div>
 	);
 };
