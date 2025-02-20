@@ -24,8 +24,8 @@ const StatsSection: React.FC = () => {
 					<div className="text-center">
 						<h3 className="text-4xl font-bold mb-2">90+</h3>
 						<p className="text-sm text-gray-600 max-w-xs mx-auto">
-							Number of countries where Open Society Foundations supported civil
-							society organizations
+							Number of countries where Imo Self Help Organisation supported
+							civil society organizations
 						</p>
 					</div>
 				</div>

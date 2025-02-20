@@ -37,6 +37,7 @@ const Navbar: React.FC = () => {
 
 				{/* Mobile Menu Button */}
 				<button
+					title="button"
 					className="md:hidden text-gray-800"
 					type="button"
 					onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>

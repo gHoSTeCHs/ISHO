@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
 					<div className="md:w-2/3">
 						<p className="text-coral-500 font-medium">About Our Foundations</p>
 						<p className="mt-6 text-gray-700">
-							The Open Society{' '}
+							Imo Self Help Organisation{' '}
 							<span className="text-coral-500">Foundations</span> are active in
 							more than 120 countries around the world, using grant-giving,
 							research, advocacy, impact investment, and strategic litigation to

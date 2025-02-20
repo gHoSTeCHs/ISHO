@@ -27,7 +27,7 @@ const VolunteerSection: React.FC = () => {
 				<p className="text-gray-700 max-w-4xl mb-12">
 					Your money creates diverse organizational shifts of global involvement
 					by acting upon individuals like yourself to dream and create a
-					autonomous morals. Open Society
+					autonomous morals. Imo Self Help Organisation
 				</p>
 
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-6">

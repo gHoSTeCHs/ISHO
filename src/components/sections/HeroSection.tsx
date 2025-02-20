@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
 							<p className="mt-4 text-gray-700">
 								Every year, the{' '}
 								<span className="text-coral-500 font-medium">
-									Open Society Foundations
+									Imo Self Help Organisation
 								</span>{' '}
 								give grants to a diverse array of groups and individuals who
 								promote our vision of a more equitable world. That is guided by

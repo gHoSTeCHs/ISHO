@@ -162,7 +162,7 @@ const Footer: React.FC = () => {
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 						<div className="text-sm text-gray-500">
 							<p>
-								&copy; {currentYear} Open Society Foundation. All rights
+								&copy; {currentYear} Imo Self Help Foundation. All rights
 								reserved.
 							</p>
 						</div>
@@ -194,7 +194,7 @@ const Footer: React.FC = () => {
 
 					<div className="mt-6 text-xs text-gray-600 text-center">
 						<p>
-							The Open Society Foundations work to build vibrant and inclusive
+							The Imo Self Help Organisation work to build vibrant and inclusive
 							democracies whose governments are accountable to their citizens.
 						</p>
 					</div>

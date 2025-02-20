@@ -6,9 +6,10 @@ const FoundationActivities: React.FC = () => {
 			<div className="container mx-auto">
 				<p className="text-coral-500 font-medium">Foundation Activities</p>
 				<p className="mt-6 max-w-3xl">
-					The Open Society <span className="text-coral-500">Foundations</span>{' '}
-					are active in more than 120 countries around the world, using
-					grant-giving, research, advocacy, impact investment.
+					The Imo Self Help Organisation{' '}
+					<span className="text-coral-500">Foundations</span> are active in more
+					than 120 countries around the world, using grant-giving, research,
+					advocacy, impact investment.
 				</p>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">

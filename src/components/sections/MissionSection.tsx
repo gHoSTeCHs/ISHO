@@ -7,8 +7,8 @@ const MissionSection: React.FC = () => {
 				<div className="mb-8">
 					<p className="font-medium">Who We Work</p>
 					<p className="mt-6 max-w-3xl">
-						The Open Society <span className="">Foundations</span> are active in
-						more than 120 countries around the world, using grant-giving,
+						The Imo Self Help <span className="">Foundations</span> are active
+						in more than 120 countries around the world, using grant-giving,
 						research, advocacy, impact investment, and strategic litigation to
 						support the development of inclusive and vibrant democracies.
 					</p>
