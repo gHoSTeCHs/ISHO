@@ -22,7 +22,8 @@ const FoundationActivities: React.FC = () => {
 						/>
 						<div className="mt-4">
 							<p className="text-sm text-gray-600">
-								Xurio foundation award collection program progress...
+								Establishing a palm plantation, and an oil mill project at
+								Obitti in Ohaji/Egbema LGA.
 							</p>
 						</div>
 					</div>
@@ -35,7 +36,8 @@ const FoundationActivities: React.FC = () => {
 						/>
 						<div className="mt-4">
 							<p className="text-sm text-gray-600">
-								Volunteer activities with local communities...
+								Esatblished Early Child Care Centers in Imo State through the
+								assitance of UNICEF
 							</p>
 						</div>
 					</div>
