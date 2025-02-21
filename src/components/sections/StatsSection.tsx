@@ -6,7 +6,7 @@ const StatsSection: React.FC = () => {
 			<div className="container mx-auto">
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 					<div className="text-center">
-						<h3 className="text-4xl font-bold mb-2">1M+</h3>
+						<h3 className="text-4xl font-bold mb-2">1000+</h3>
 						<p className="text-sm text-gray-600 max-w-xs mx-auto">
 							Number of individuals who received direct services from our
 							community partners
@@ -14,18 +14,18 @@ const StatsSection: React.FC = () => {
 					</div>
 
 					<div className="text-center">
-						<h3 className="text-4xl font-bold mb-2">40M+</h3>
+						<h3 className="text-4xl font-bold mb-2">5000+</h3>
 						<p className="text-sm text-gray-600 max-w-xs mx-auto">
-							Number of people reached through advocacy campaigns funded by Open
-							Society Foundations
+							Number of people reached through advocacy campaigns funded by Imo
+							Self Help Organisation
 						</p>
 					</div>
 
 					<div className="text-center">
-						<h3 className="text-4xl font-bold mb-2">90+</h3>
+						<h3 className="text-4xl font-bold mb-2">5</h3>
 						<p className="text-sm text-gray-600 max-w-xs mx-auto">
-							Number of countries where Imo Self Help Organisation supported
-							civil society organizations
+							Number of States where Imo Self Help Organisation supported the
+							interests of the masses
 						</p>
 					</div>
 				</div>

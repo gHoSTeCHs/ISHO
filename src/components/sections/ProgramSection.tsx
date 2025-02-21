@@ -15,7 +15,7 @@ const ProgramsSection: React.FC = () => {
 						healthcare.
 					</p>
 
-					<Button variant="primary" className="mt-6">
+					<Button variant="secondary" className="mt-6">
 						Explore More
 					</Button>
 				</div>

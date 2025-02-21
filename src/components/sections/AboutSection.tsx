@@ -15,16 +15,18 @@ const AboutSection: React.FC = () => {
 					</div>
 
 					<div className="md:w-2/3">
-						<p className="text-coral-500 font-medium">About Our Foundations</p>
+						<p className="text-coral-500 font-medium">About Our Organization</p>
 						<p className="mt-6 text-gray-700">
-							Imo Self Help Organisation{' '}
-							<span className="text-coral-500">Foundations</span> are active in
-							more than 120 countries around the world, using grant-giving,
-							research, advocacy, impact investment, and strategic litigation to
-							support the development of inclusive and vibrant democracies.
+							Imo Self Help Organization (ISHO) started as an Academic Project
+							in 1984 with the center for Applied Religion and Education Ibadan
+							with the theme{' '}
+							<span className="font-medium">
+								“finding Alternative for the poor”
+							</span>{' '}
+							by the program Coordinator, Godson C. Echefu.
 						</p>
 
-						<Button variant="primary" className="mt-8">
+						<Button variant="secondary" className="mt-8">
 							Learn More
 						</Button>
 					</div>

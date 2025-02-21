@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../ui/Button';
 
 const HeroSection: React.FC = () => {
 	return (
@@ -7,8 +6,7 @@ const HeroSection: React.FC = () => {
 			<div className="container mx-auto">
 				<div className="max-w-3xl">
 					<h1 className="text-4xl md:text-5xl font-bold mb-2 leading-tight">
-						Make Opportunity Universal <span className="text-coral-500">&</span>{' '}
-						Sustainable
+						Make South-East Great Again
 					</h1>
 
 					<div className="flex flex-wrap gap-4 mt-6 mb-8">
@@ -22,10 +20,6 @@ const HeroSection: React.FC = () => {
 							Save
 						</button>
 					</div>
-
-					<Button variant="secondary" size="md">
-						Donate Now
-					</Button>
 				</div>
 
 				<div className="mt-12 flex flex-col md:flex-row gap-8">
@@ -39,15 +33,12 @@ const HeroSection: React.FC = () => {
 
 					<div className="md:w-1/3 flex flex-col justify-between">
 						<div>
-							<p className="text-coral-500 font-medium">Who We Are</p>
+							<p className="text-coral-500 font-medium">Our Main Aim</p>
 							<p className="mt-4 text-gray-700">
-								Every year, the{' '}
-								<span className="text-coral-500 font-medium">
-									Imo Self Help Organisation
-								</span>{' '}
-								give grants to a diverse array of groups and individuals who
-								promote our vision of a more equitable world. That is guided by
-								their values and global expertise.
+								To alleviate Poverty in the south eastern states of Nigeria,
+								through the provision of Microfinance service and capacity
+								building/support services in Health, Education, Enterprise
+								development and Agriculture to rural poor.
 							</p>
 						</div>
 					</div>

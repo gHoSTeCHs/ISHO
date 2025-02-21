@@ -7,10 +7,11 @@ const MissionSection: React.FC = () => {
 				<div className="mb-8">
 					<p className="font-medium">Who We Work</p>
 					<p className="mt-6 max-w-3xl">
-						The Imo Self Help <span className="">Foundations</span> are active
-						in more than 120 countries around the world, using grant-giving,
-						research, advocacy, impact investment, and strategic litigation to
-						support the development of inclusive and vibrant democracies.
+						The Imo Self Help <span className="">Organisation</span> is active
+						in more than 5 states across Nigeria, through the provision of
+						Microfinance service and capacity building/support services in
+						Health, Education, Enterprise development and Agriculture to rural
+						poor.
 					</p>
 				</div>
 
@@ -38,7 +39,7 @@ const MissionSection: React.FC = () => {
 					</div>
 				</div>
 
-				<div className="flex justify-center mt-8">
+				{/* <div className="flex justify-center mt-8">
 					<div className="flex space-x-2">
 						<button className="w-2 h-2 rounded-full bg-white opacity-50">
 							Test
@@ -48,7 +49,7 @@ const MissionSection: React.FC = () => {
 							Test
 						</button>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);

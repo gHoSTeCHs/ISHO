@@ -15,10 +15,9 @@ const ValueSection: React.FC = () => {
 					</p>
 
 					<div className="mt-8 flex flex-wrap gap-4">
-						<Button variant="secondary">Donate Now</Button>
 						<Button
-							variant="outline"
-							className="bg-transparent text-black hover:bg-black/80 hover:bg-opacity-10">
+							variant="secondary"
+							className=" text-black hover:bg-black/80 hover:bg-opacity-10">
 							Learn More
 						</Button>
 					</div>

@@ -4,18 +4,18 @@ import React from 'react';
 const VolunteerSection: React.FC = () => {
 	const volunteers = [
 		{
-			name: 'Sam Thomas',
-			role: 'Water Volunteer',
+			name: 'Godson C. Echefu',
+			role: 'Executive Director',
 			image: 'https://placehold.co/100x100',
 		},
 		{
-			name: 'Adam Johnson',
-			role: 'Medical Volunteer',
+			name: 'Chief G. U. Ejimole',
+			role: 'Chairman',
 			image: 'https://placehold.co/100x100',
 		},
 		{
-			name: 'John Smith',
-			role: 'Food Volunteer',
+			name: 'Mr. Chinedu Egere',
+			role: 'Secretary',
 			image: 'https://placehold.co/100x100',
 		},
 	];
@@ -23,11 +23,11 @@ const VolunteerSection: React.FC = () => {
 	return (
 		<section className="py-16 px-6 bg-white">
 			<div className="container mx-auto">
-				<h2 className="text-2xl font-semibold mb-8">Current Volunteer</h2>
+				<h2 className="text-2xl font-semibold mb-8">Our Key Officers</h2>
 				<p className="text-gray-700 max-w-4xl mb-12">
-					Your money creates diverse organizational shifts of global involvement
-					by acting upon individuals like yourself to dream and create a
-					autonomous morals. Imo Self Help Organisation
+					These are some of the key individuals who make it happen. The have put
+					in all the have, to ensure that the future of this organisation is
+					remains bright.
 				</p>
 
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-6">

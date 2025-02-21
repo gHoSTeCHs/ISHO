@@ -1,5 +1,5 @@
 import AboutSection from './components/sections/AboutSection';
-import DonationSection from './components/sections/DonationSection';
+// import DonationSection from './components/sections/DonationSection';
 import Footer from './components/sections/Footer';
 import FoundationActivities from './components/sections/FoundationActivities';
 import HeroSection from './components/sections/HeroSection';
@@ -23,7 +23,7 @@ function App() {
 				<ValueSection />
 				<VolunteerSection />
 				<FoundationActivities />
-				<DonationSection />
+				{/* <DonationSection /> */}
 			</main>
 			<Footer />
 		</>
