@@ -1,4 +1,5 @@
 import React from 'react';
+import { images } from '../../constants';
 
 const MissionSection: React.FC = () => {
 	return (
@@ -18,7 +19,7 @@ const MissionSection: React.FC = () => {
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
 					<div className="relative">
 						<img
-							src="https://placehold.co/500x350"
+							src={images.Pic6}
 							alt="Water and sanitation program"
 							className="w-full h-64 object-cover rounded-lg"
 						/>
@@ -29,7 +30,7 @@ const MissionSection: React.FC = () => {
 
 					<div className="relative">
 						<img
-							src="https://placehold.co/500x350"
+							src={images.Pic9}
 							alt="World Health Foundation"
 							className="w-full h-64 object-cover rounded-lg"
 						/>
