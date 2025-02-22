@@ -9,7 +9,7 @@ const ValueSection: React.FC = () => {
 					<h2 className="text-black text-3xl md:text-4xl font-bold leading-tight">
 						Helping Children Never Doubt that They are Valuable & Powerful
 					</h2>
-					<p className="mt-4 text-gray-300">
+					<p className="mt-4 text-gray-600">
 						The fight for human dignity never ends, which is why we value
 						partners who understand that change happens from the ground up.
 					</p>

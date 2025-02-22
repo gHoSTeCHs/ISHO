@@ -116,7 +116,7 @@ const HeroSection: React.FC = () => {
 						ref={textContentRef}
 						className="md:w-1/3 flex flex-col justify-between">
 						<div>
-							<p className="text-coral-500 font-medium">Our Main Aim</p>
+							<p className="text-coral-500 font-bold text-2xl">Our Main Aim</p>
 							<p className="mt-4 text-gray-700">
 								To alleviate Poverty in the south eastern states of Nigeria,
 								through the provision of Microfinance service and capacity

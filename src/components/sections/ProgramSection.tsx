@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../ui/Button';
+import { images } from '../../constants';
 
 const ProgramsSection: React.FC = () => {
 	return (
@@ -20,7 +21,9 @@ const ProgramsSection: React.FC = () => {
 					</Button>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+				<img src={images.comingSoon} alt="Coming soon gif" />
+
+				{/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
 					<div className="bg-white rounded-lg shadow p-4">
 						<div className="flex">
 							<img
@@ -68,7 +71,7 @@ const ProgramsSection: React.FC = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);

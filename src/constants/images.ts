@@ -15,6 +15,7 @@ import scan5 from '../assets/images/scan0005.jpg';
 import scan6 from '../assets/images/scan0006.jpg';
 import scan7 from '../assets/images/scan0007.jpg';
 import scan8 from '../assets/images/scan0008.jpg';
+import comingSoon from '../assets/UbYz.gif';
 
 export default {
 	Pic1,
@@ -34,4 +35,5 @@ export default {
 	scan6,
 	scan7,
 	scan8,
+	comingSoon,
 };

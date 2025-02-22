@@ -12,10 +12,10 @@ const Footer: React.FC = () => {
 						<Logo />
 						<p className="mt-4 text-gray-400 text-sm">
 							Our foundation is committed to creating a more equitable and just
-							world through strategic grants and partnerships with community
+							Nigeria through strategic grants and partnerships with community
 							organizations.
 						</p>
-						<div className="flex space-x-4 mt-6">
+						{/* <div className="flex space-x-4 mt-6">
 							<a
 								href="#"
 								aria-label="Facebook"
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
 									<path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
 								</svg>
 							</a>
-						</div>
+						</div> */}
 					</div>
 
 					<div>
@@ -79,23 +79,13 @@ const Footer: React.FC = () => {
 							</li>
 							<li>
 								<a href="#" className="hover:text-white">
-									Partners
-								</a>
-							</li>
-							<li>
-								<a href="#" className="hover:text-white">
-									Careers
-								</a>
-							</li>
-							<li>
-								<a href="#" className="hover:text-white">
 									Contact Us
 								</a>
 							</li>
 						</ul>
 					</div>
 
-					<div>
+					{/* <div>
 						<h4 className="font-semibold mb-4">Explore</h4>
 						<ul className="space-y-2 text-sm text-gray-400">
 							<li>
@@ -124,38 +114,7 @@ const Footer: React.FC = () => {
 								</a>
 							</li>
 						</ul>
-					</div>
-
-					<div>
-						<h4 className="font-semibold mb-4">Get Involved</h4>
-						<ul className="space-y-2 text-sm text-gray-400">
-							<li>
-								<a href="#" className="hover:text-white">
-									Donate
-								</a>
-							</li>
-							<li>
-								<a href="#" className="hover:text-white">
-									Volunteer
-								</a>
-							</li>
-							<li>
-								<a href="#" className="hover:text-white">
-									Fundraise
-								</a>
-							</li>
-							<li>
-								<a href="#" className="hover:text-white">
-									Corporate Partnerships
-								</a>
-							</li>
-							<li>
-								<a href="#" className="hover:text-white">
-									Legacy Giving
-								</a>
-							</li>
-						</ul>
-					</div>
+					</div> */}
 				</div>
 
 				<div className="border-t border-gray-800 pt-8">

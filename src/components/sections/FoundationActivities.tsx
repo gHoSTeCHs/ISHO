@@ -1,10 +1,11 @@
 import React from 'react';
+import { images } from '../../constants';
 
 const FoundationActivities: React.FC = () => {
 	return (
 		<section className="py-16 px-6 bg-gray-50">
 			<div className="container mx-auto">
-				<p className="text-coral-500 font-medium">
+				<p className="text-coral-500 font-bold text-2xl">
 					Organisation Previous Activities
 				</p>
 				<p className="mt-6 max-w-3xl">
@@ -14,30 +15,31 @@ const FoundationActivities: React.FC = () => {
 				</p>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-					<div className="relative">
+					<div className="relative ">
 						<img
-							src="https://placehold.co/500x300"
+							src={images.scan6}
 							alt="Foundation award distribution program"
-							className="w-full h-64 object-cover rounded-lg"
+							className="w-full h-64 object-cover rounded-2xl overflow-hidden"
 						/>
+
 						<div className="mt-4">
-							<p className="text-sm text-gray-600">
-								Establishing a palm plantation, and an oil mill project at
-								Obitti in Ohaji/Egbema LGA.
+							<p className="text-gray-600 text-base font-medium">
+								Training and providing adequate knowledge and assitance in food
+								processing, and production.
 							</p>
 						</div>
 					</div>
 
 					<div className="relative">
 						<img
-							src="https://placehold.co/500x300"
+							src={images.scan4}
 							alt="Volunteer activities"
 							className="w-full h-64 object-cover rounded-lg"
 						/>
 						<div className="mt-4">
-							<p className="text-sm text-gray-600">
-								Esatblished Early Child Care Centers in Imo State through the
-								assitance of UNICEF
+							<p className="text-gray-600 text-base font-medium">
+								Funding Micro Credits to Primary Groups in Ideato, Mbais and
+								Okigwe dioceses in Imo State, Nigeria.
 							</p>
 						</div>
 					</div>

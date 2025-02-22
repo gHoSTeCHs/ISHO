@@ -14,12 +14,7 @@ const Navbar: React.FC = () => {
 					<a href="#" className="text-gray-800 hover:text-gray-600">
 						Home
 					</a>
-					<a href="#" className="text-gray-800 hover:text-gray-600">
-						Portfolio
-					</a>
-					<a href="#" className="text-gray-800 hover:text-gray-600">
-						Pages
-					</a>
+
 					<a href="#" className="text-gray-800 hover:text-gray-600">
 						About Us
 					</a>
@@ -63,12 +58,6 @@ const Navbar: React.FC = () => {
 					<div className="flex flex-col space-y-3">
 						<a href="#" className="text-gray-800 hover:text-gray-600">
 							Home
-						</a>
-						<a href="#" className="text-gray-800 hover:text-gray-600">
-							Portfolio
-						</a>
-						<a href="#" className="text-gray-800 hover:text-gray-600">
-							Pages
 						</a>
 						<a href="#" className="text-gray-800 hover:text-gray-600">
 							About Us

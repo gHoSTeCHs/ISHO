@@ -23,7 +23,7 @@ const VolunteerSection: React.FC = () => {
 	return (
 		<section className="py-16 px-6 bg-white">
 			<div className="container mx-auto">
-				<h2 className="text-2xl font-semibold mb-8">Our Key Officers</h2>
+				<h2 className="text-2xl font-bold mb-8">Our Key Officers</h2>
 				<p className="text-gray-700 max-w-4xl mb-12">
 					These are some of the key individuals who make it happen. The have put
 					in all the have, to ensure that the future of this organisation is
