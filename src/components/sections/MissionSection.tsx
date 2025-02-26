@@ -121,7 +121,10 @@ const MissionSection: React.FC = () => {
 						in more than 5 states across Nigeria, through the provision of
 						Microfinance service and capacity building/support services in
 						Health, Education, Enterprise development and Agriculture to rural
-						poor.
+						poor. We are also expanding our reach to children in need, and
+						fighting to ensure that the{' '}
+						<span className="font-semibold">human rights</span> of all Nigerians
+						are protected.
 					</p>
 				</div>
 

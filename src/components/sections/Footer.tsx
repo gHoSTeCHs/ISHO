@@ -125,7 +125,7 @@ const Footer: React.FC = () => {
 								reserved.
 							</p>
 						</div>
-						<div className="text-sm text-gray-500 md:text-right">
+						{/* <div className="text-sm text-gray-500 md:text-right">
 							<ul className="flex flex-wrap gap-4 justify-start md:justify-end">
 								<li>
 									<a href="#" className="hover:text-gray-300">
@@ -148,7 +148,7 @@ const Footer: React.FC = () => {
 									</a>
 								</li>
 							</ul>
-						</div>
+						</div> */}
 					</div>
 
 					<div className="mt-6 text-xs text-gray-600 text-center">

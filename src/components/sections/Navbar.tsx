@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../ui/Logo';
+import { images } from '../../constants';
 
 const Navbar: React.FC = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
 	return (
 		<header className="bg-white py-4 px-6 md:px-12 shadow-sm">
 			<div className="container mx-auto flex justify-between items-center">
-				<Logo />
+				<img src={images.logo} alt="Logo" className="h-12 w-12" />
 
 				{/* Desktop Navigation */}
 				<nav className="hidden md:flex space-x-8">

@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import Button from '../ui/Button';
+import NGODonationDetails from '../Account';
 const DonationSection: React.FC = () => {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	// const closeModal = () => setIsModalOpen(false);
 	const [donationAmount, setDonationAmount] = useState<number>(50);
-	const predefinedAmounts = [25, 50, 100, 250, 500];
+	const predefinedAmounts = [5000, 10000, 20000, 50000];
 
 	return (
 		<section className="py-16 px-6 bg-pink-50">
@@ -23,7 +26,7 @@ const DonationSection: React.FC = () => {
 											? 'bg-gray-500 text-white'
 											: 'bg-gray-100 hover:bg-gray-200 text-gray-800'
 									}`}>
-									${amount}
+									#{amount}
 								</button>
 							))}
 							<button
@@ -44,7 +47,7 @@ const DonationSection: React.FC = () => {
 								</label>
 								<div className="relative">
 									<span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
-										$
+										#
 									</span>
 									<input
 										type="number"
@@ -60,26 +63,19 @@ const DonationSection: React.FC = () => {
 						<div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
 							<div className="w-full sm:w-auto">
 								<Button
+									onClick={() => setIsModalOpen(true)}
 									variant="outline"
 									size="lg"
 									className="w-full sm:w-auto">
 									Donate Now
 								</Button>
 							</div>
-							<div className="w-full sm:w-auto">
-								<Button
-									variant="secondary"
-									size="lg"
-									className="w-full sm:w-auto">
-									Learn More
-								</Button>
-							</div>
 						</div>
 
 						<div className="mt-6 text-center">
-							<p className="text-sm text-gray-600">
-								Your donation is tax-deductible. You'll receive a receipt via
-								email.
+							<p className="text-sm font-semibold text-gray-600">
+								With your help, we can reach more people in need, and make an
+								unforseen impact in their lives.
 							</p>
 						</div>
 					</div>
@@ -101,10 +97,8 @@ const DonationSection: React.FC = () => {
 									/>
 								</svg>
 							</div>
-							<h3 className="font-medium text-lg mb-2">
-								Financial Transparency
-							</h3>
-							<p className="text-gray-600 text-sm">
+							<h3 className="font-bold text-lg mb-2">Financial Transparency</h3>
+							<p className="text-gray-600 font-semibold text-sm">
 								We're committed to transparency. 90% of donations go directly to
 								our programs.
 							</p>
@@ -126,8 +120,8 @@ const DonationSection: React.FC = () => {
 									/>
 								</svg>
 							</div>
-							<h3 className="font-medium text-lg mb-2">Secure Donations</h3>
-							<p className="text-gray-600 text-sm">
+							<h3 className="font-bold text-lg mb-2">Secure Donations</h3>
+							<p className="text-gray-600 font-semibold text-sm">
 								Your personal and payment information is protected with
 								bank-level security.
 							</p>
@@ -149,8 +143,8 @@ const DonationSection: React.FC = () => {
 									/>
 								</svg>
 							</div>
-							<h3 className="font-medium text-lg mb-2">Impact Reporting</h3>
-							<p className="text-gray-600 text-sm">
+							<h3 className="font-bold text-lg mb-2">Impact Reporting</h3>
+							<p className="text-gray-600 font-semibold text-sm">
 								Receive updates about how your donation is making a difference
 								in communities.
 							</p>
@@ -158,6 +152,11 @@ const DonationSection: React.FC = () => {
 					</div>
 				</div>
 			</div>
+
+			<NGODonationDetails
+				isModalOpen={isModalOpen}
+				setIsModalOpen={setIsModalOpen}
+			/>
 		</section>
 	);
 };

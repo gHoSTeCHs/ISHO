@@ -1,5 +1,5 @@
 import AboutSection from './components/sections/AboutSection';
-// import DonationSection from './components/sections/DonationSection';
+import DonationSection from './components/sections/DonationSection';
 import Footer from './components/sections/Footer';
 import FoundationActivities from './components/sections/FoundationActivities';
 import HeroSection from './components/sections/HeroSection';
@@ -8,7 +8,7 @@ import Navbar from './components/sections/Navbar';
 import ProgramsSection from './components/sections/ProgramSection';
 import StatsSection from './components/sections/StatsSection';
 import ValueSection from './components/sections/ValueSection';
-import VolunteerSection from './components/sections/VolunteerSection';
+// import VolunteerSection from './components/sections/VolunteerSection';
 
 function App() {
 	return (
@@ -21,9 +21,8 @@ function App() {
 				<AboutSection />
 				<ProgramsSection />
 				<ValueSection />
-				<VolunteerSection />
+				<DonationSection />
 				<FoundationActivities />
-				{/* <DonationSection /> */}
 			</main>
 			<Footer />
 		</>

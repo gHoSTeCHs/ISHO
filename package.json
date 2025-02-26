@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
     "@tailwindcss/vite": "^4.0.7",
     "gsap": "^3.12.7",
+    "lucide-react": "^0.476.0",
     "ngov1": "file:../ngoV1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
