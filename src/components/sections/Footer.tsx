@@ -151,7 +151,13 @@ const Footer: React.FC = () => {
 						</div> */}
 					</div>
 
-					<div className="mt-6 text-xs text-gray-600 text-center">
+					<div id="contact" className="my-6">
+						4 Contact Address: PLOT 99 IKENEGBU LAYOUT EXTENSION ( 12 WILLIE
+						ELEZIEANYA CRESCENT) OWERRI, IMO STATE, NIGERIA, Mobile:
+						08033390600, 07081074005, 08064518264
+					</div>
+
+					<div className=" text-xs text-gray-600 text-center">
 						<p>
 							The Imo Self Help Organisation work to build vibrant and inclusive
 							democracies whose governments are accountable to their citizens.

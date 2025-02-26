@@ -31,6 +31,7 @@ const Navbar: React.FC = () => {
 				</button>
 
 				{/* Mobile Menu Button */}
+
 				<button
 					title="button"
 					className="md:hidden text-gray-800"
@@ -59,15 +60,19 @@ const Navbar: React.FC = () => {
 						<a href="#" className="text-gray-800 hover:text-gray-600">
 							Home
 						</a>
-						<a href="#" className="text-gray-800 hover:text-gray-600">
+						<a href="#about" className="text-gray-800 hover:text-gray-600">
 							About Us
 						</a>
-						<a href="#" className="text-gray-800 hover:text-gray-600">
+						<a href="#contact" className="text-gray-800 hover:text-gray-600">
 							Contact
 						</a>
-						<button className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md w-full">
-							Donate
-						</button>
+						<a href="#donation">
+							<button
+								className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md w-full"
+								type="button">
+								Donate
+							</button>
+						</a>
 					</div>
 				</nav>
 			)}

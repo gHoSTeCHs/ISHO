@@ -8,7 +8,7 @@ const DonationSection: React.FC = () => {
 	const predefinedAmounts = [5000, 10000, 20000, 50000];
 
 	return (
-		<section className="py-16 px-6 bg-pink-50">
+		<section id="donation" className="py-16 px-6 bg-pink-50">
 			<div className="container mx-auto">
 				<div className="max-w-3xl mx-auto text-center">
 					<h2 className="text-3xl font-bold mb-6">

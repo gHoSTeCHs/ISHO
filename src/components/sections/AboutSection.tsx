@@ -84,7 +84,7 @@ const AboutSection: React.FC = () => {
 	}, []);
 
 	return (
-		<section ref={sectionRef} className="py-16 px-6 overflow-hidden">
+		<section id="about" ref={sectionRef} className="py-16 px-6 overflow-hidden">
 			<div className="container mx-auto">
 				<div className="flex flex-col md:flex-row gap-12">
 					<div className="md:w-1/3">
