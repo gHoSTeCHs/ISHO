@@ -9,8 +9,8 @@ interface NGODetails {
 	accountName: string;
 	accountNumber: string;
 	bankName: string;
-	ifscCode: string;
-	swiftCode: string;
+	paypal: string;
+	swiftCode?: string;
 	branchAddress: string;
 }
 
@@ -40,11 +40,10 @@ const NGODonationDetails: React.FC<AccountDetailsProps> = ({
 		name: 'Imo Self Help Organization',
 		tagline:
 			'Helping to alleviate porverty in the rural communities of NIgeria',
-		accountName: 'Hope Foundation Trust',
-		accountNumber: '5089 7536 2401 8903',
-		bankName: 'Global Trust Bank',
-		ifscCode: 'GTBK0001234',
-		swiftCode: 'GTBKINBB123',
+		accountName: 'Echefu Godson Ogechukwu',
+		accountNumber: '2031656083',
+		bankName: 'First Bank',
+		paypal: 'echefugodson50@gmail.com',
 		branchAddress: 'Plot 1058 Ikenegbu Extension, Owerri, Imo State',
 	};
 
@@ -104,12 +103,12 @@ const NGODonationDetails: React.FC<AccountDetailsProps> = ({
 					</div>
 
 					<div>
-						<p className="text-sm text-gray-500">IFSC Code</p>
+						<p className="text-sm text-gray-500">Paypal</p>
 						<div className="flex items-center">
-							<p className="font-medium mr-2">{ngoDetails.ifscCode}</p>
+							<p className="font-medium mr-2">{ngoDetails.paypal}</p>
 							<button
 								className="p-1 text-blue-600 hover:text-blue-800 transition-colors"
-								onClick={() => copyToClipboard(ngoDetails.ifscCode, 'ifsc')}
+								onClick={() => copyToClipboard(ngoDetails.paypal, 'ifsc')}
 								type="button">
 								{copied.ifsc ? <Check size={16} /> : <Copy size={16} />}
 							</button>
@@ -145,7 +144,7 @@ const NGODonationDetails: React.FC<AccountDetailsProps> = ({
 			<div className="px-6 py-4 bg-gray-50 border-t">
 				<p className="text-sm text-gray-600">
 					Questions about donating? Contact us at{' '}
-					<span className="font-medium">imoself@yahoo.com</span> or call{' '}
+					<span className="font-medium">info@isho-nigeria.org</span> or call{' '}
 					<span className="font-medium">+(243)-367-488-64</span>
 				</p>
 			</div>

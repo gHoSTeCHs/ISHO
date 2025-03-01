@@ -155,6 +155,7 @@ const Footer: React.FC = () => {
 						4 Contact Address: PLOT 99 IKENEGBU LAYOUT EXTENSION ( 12 WILLIE
 						ELEZIEANYA CRESCENT) OWERRI, IMO STATE, NIGERIA, Mobile:
 						08033390600, 07081074005, 08064518264
+						<br /> Email: info@isho-nigeria.org
 					</div>
 
 					<div className=" text-xs text-gray-600 text-center">
