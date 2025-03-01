@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@layer theme, base, components, utilities;
+
 :root {
 	--color-coral-50: #fff1f0;
 	--color-coral-100: #ffe0de;
@@ -22,3 +24,22 @@
 	--color-navy-800: #293a51;
 	--color-navy-900: #1e2836;
 }
+
+/* @utility container {
+	@variant 
+} */
+
+/* @utility container{
+	@screen sm{
+		max-width: 640px;
+	}
+	@screen md{
+		max-width: 768px;
+	}
+	@screen lg{
+		max-width: 1024px;
+	}
+	@screen xl{
+		max-width: 1280px;
+	}
+} */
