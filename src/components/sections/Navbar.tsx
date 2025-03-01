@@ -15,20 +15,22 @@ const Navbar: React.FC = () => {
 						Home
 					</a>
 
-					<a href="#" className="text-gray-800 hover:text-gray-600">
+					<a href="#about" className="text-gray-800 hover:text-gray-600">
 						About Us
 					</a>
-					<a href="#" className="text-gray-800 hover:text-gray-600">
+					<a href="#contact" className="text-gray-800 hover:text-gray-600">
 						Contact
 					</a>
 				</nav>
 
 				{/* CTA Button */}
-				<button
-					className="hidden md:block bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-md"
-					type="button">
-					Donate
-				</button>
+				<a href="#donation">
+					<button
+						className="hidden md:block bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-md"
+						type="button">
+						Donate
+					</button>
+				</a>
 
 				{/* Mobile Menu Button */}
 
