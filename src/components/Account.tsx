@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
-import { Copy, Check, Heart } from 'lucide-react';
+import { useState } from 'react';
+import { Copy, Check } from 'lucide-react';
 import Modal from './ui/Modal';
 
-// Define interface for NGO details
+interface DonationModalProps {
+	show: boolean;
+	onClose: () => void;
+}
+
 interface NGODetails {
 	name: string;
 	tagline: string;
@@ -10,146 +14,117 @@ interface NGODetails {
 	accountNumber: string;
 	bankName: string;
 	paypal: string;
-	swiftCode?: string;
-	branchAddress: string;
+	officeAddress: string;
 }
 
-// Define interface for copied state
-interface CopiedState {
-	accountNumber: boolean;
-	ifsc: boolean;
-	swiftCode: boolean;
-}
+type CopyField = 'accountNumber' | 'paypal';
 
-interface AccountDetailsProps {
-	isModalOpen: boolean;
-	setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
+const ngoDetails: NGODetails = {
+	name: 'Give to Imo Self Help Organization',
+	tagline:
+		'Your gift is lent, repaid and lent again — it keeps working, member after member.',
+	accountName: 'Echefu Godson Ogechukwu',
+	accountNumber: '2031656083',
+	bankName: 'First Bank',
+	paypal: 'echefugodson50@gmail.com',
+	officeAddress: '1 Works Road, Owerri, Imo State, Nigeria',
+};
 
-const NGODonationDetails: React.FC<AccountDetailsProps> = ({
-	isModalOpen,
-	setIsModalOpen,
-}) => {
-	const [copied, setCopied] = useState<CopiedState>({
-		accountNumber: false,
-		ifsc: false,
-		swiftCode: false,
-	});
+export function DonationModal({ show, onClose }: DonationModalProps) {
+	const [copied, setCopied] = useState<CopyField | null>(null);
 
-	const ngoDetails: NGODetails = {
-		name: 'Imo Self Help Organization',
-		tagline:
-			'Helping to alleviate porverty in the rural communities of NIgeria',
-		accountName: 'Echefu Godson Ogechukwu',
-		accountNumber: '2031656083',
-		bankName: 'First Bank',
-		paypal: 'echefugodson50@gmail.com',
-		branchAddress: 'Plot 1058 Ikenegbu Extension, Owerri, Imo State',
-	};
-
-	const copyToClipboard = (text: string, field: keyof CopiedState): void => {
+	const copyToClipboard = (text: string, field: CopyField): void => {
 		navigator.clipboard.writeText(text).then(() => {
-			setCopied({ ...copied, [field]: true });
-			setTimeout(() => {
-				setCopied({ ...copied, [field]: false });
-			}, 2000);
+			setCopied(field);
+			setTimeout(() => setCopied(null), 2000);
 		});
 	};
 
 	return (
-		<Modal show={isModalOpen} onClose={() => setIsModalOpen(false)}>
-			<div className="bg-blue-600 p-6 text-white">
-				<div className="flex items-center">
-					<Heart className="mr-2" />
-					<h2 className="text-2xl font-bold">{ngoDetails.name}</h2>
-				</div>
-				<p className="mt-1 text-blue-100">{ngoDetails.tagline}</p>
+		<Modal show={show} onClose={onClose}>
+			<div className="give-modal-head">
+				<button
+					className="gm-close"
+					type="button"
+					onClick={onClose}
+					aria-label="Close donation details">
+					<svg
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						strokeWidth="1.8"
+						strokeLinecap="round">
+						<path d="M6 6l12 12M18 6L6 18" />
+					</svg>
+				</button>
+				<h2 className="gm-title">{ngoDetails.name}</h2>
+				<p>{ngoDetails.tagline}</p>
 			</div>
 
-			{/* Content */}
-			<div className="p-6">
-				<h3 className="text-lg font-semibold text-gray-800 mb-4">
-					Bank Details for Donation
-				</h3>
+			<div className="give-modal-body">
+				<h3>Bank details for your gift</h3>
 
-				<div className="space-y-4">
-					<div>
-						<p className="text-sm text-gray-500">Account Name</p>
-						<p className="font-medium">{ngoDetails.accountName}</p>
-					</div>
-
-					<div>
-						<p className="text-sm text-gray-500">Bank Name</p>
-						<p className="font-medium">{ngoDetails.bankName}</p>
-					</div>
-
-					<div>
-						<p className="text-sm text-gray-500">Account Number</p>
-						<div className="flex items-center">
-							<p className="font-medium mr-2">{ngoDetails.accountNumber}</p>
-							<button
-								className="p-1 text-blue-600 hover:text-blue-800 transition-colors"
-								onClick={() =>
-									copyToClipboard(ngoDetails.accountNumber, 'accountNumber')
-								}
-								type="button">
-								{copied.accountNumber ? (
-									<Check size={16} />
-								) : (
-									<Copy size={16} />
-								)}
-							</button>
-						</div>
-					</div>
-
-					<div>
-						<p className="text-sm text-gray-500">Paypal</p>
-						<div className="flex items-center">
-							<p className="font-medium mr-2">{ngoDetails.paypal}</p>
-							<button
-								className="p-1 text-blue-600 hover:text-blue-800 transition-colors"
-								onClick={() => copyToClipboard(ngoDetails.paypal, 'ifsc')}
-								type="button">
-								{copied.ifsc ? <Check size={16} /> : <Copy size={16} />}
-							</button>
-						</div>
-					</div>
-
-					<div>
-						<p className="text-sm text-gray-500">Branch Address</p>
-						<p className="font-medium">{ngoDetails.branchAddress}</p>
-					</div>
+				<div className="acct-row">
+					<span className="acct-k">Account name</span>
+					<span className="acct-v">{ngoDetails.accountName}</span>
 				</div>
 
-				{/* Tax Information */}
-				{/* <div className="mt-6 p-4 bg-blue-50 rounded-md">
-					<p className="text-sm text-blue-800">
-						<strong>Tax Benefits:</strong> All donations are eligible for tax
-						deduction under Section 80G of the Income Tax Act.
-					</p>
-				</div> */}
-
-				{/* Call to Action */}
-				<div className="mt-6">
-					<button
-						onClick={() => setIsModalOpen(false)}
-						className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-md transition-colors flex items-center justify-center"
-						type="button">
-						<span>Close</span>
-					</button>
+				<div className="acct-row">
+					<span className="acct-k">Bank</span>
+					<span className="acct-v">{ngoDetails.bankName}</span>
 				</div>
+
+				<div className="acct-row">
+					<span className="acct-k">Account number</span>
+					<span className="acct-v">
+						{ngoDetails.accountNumber}
+						<button
+							className="copy-btn"
+							type="button"
+							onClick={() =>
+								copyToClipboard(ngoDetails.accountNumber, 'accountNumber')
+							}
+							aria-label="Copy account number">
+							{copied === 'accountNumber' ? (
+								<Check size={16} />
+							) : (
+								<Copy size={16} />
+							)}
+						</button>
+					</span>
+				</div>
+
+				<div className="acct-row">
+					<span className="acct-k">PayPal</span>
+					<span className="acct-v">
+						{ngoDetails.paypal}
+						<button
+							className="copy-btn"
+							type="button"
+							onClick={() => copyToClipboard(ngoDetails.paypal, 'paypal')}
+							aria-label="Copy PayPal address">
+							{copied === 'paypal' ? <Check size={16} /> : <Copy size={16} />}
+						</button>
+					</span>
+				</div>
+
+				<div className="acct-row">
+					<span className="acct-k">Office</span>
+					<span className="acct-v">{ngoDetails.officeAddress}</span>
+				</div>
+
+				<button
+					className="btn give-full give-modal-done"
+					type="button"
+					onClick={onClose}>
+					Done
+				</button>
 			</div>
 
-			{/* Footer */}
-			<div className="px-6 py-4 bg-gray-50 border-t">
-				<p className="text-sm text-gray-600">
-					Questions about donating? Contact us at{' '}
-					<span className="font-medium">info@isho-nigeria.org</span> or call{' '}
-					<span className="font-medium">+(243)-367-488-64</span>
-				</p>
+			<div className="give-modal-foot">
+				Questions about giving? Email <b>info@isho-nigeria.org</b> or call{' '}
+				<b>+234 803 339 0600</b>.
 			</div>
 		</Modal>
 	);
-};
-
-export default NGODonationDetails;
+}

@@ -1,28 +1,32 @@
-import AboutSection from './components/sections/AboutSection';
-import DonationSection from './components/sections/DonationSection';
-import Footer from './components/sections/Footer';
-import FoundationActivities from './components/sections/FoundationActivities';
-import HeroSection from './components/sections/HeroSection';
-import MissionSection from './components/sections/MissionSection';
-import Navbar from './components/sections/Navbar';
-import ProgramsSection from './components/sections/ProgramSection';
-import StatsSection from './components/sections/StatsSection';
-import ValueSection from './components/sections/ValueSection';
-// import VolunteerSection from './components/sections/VolunteerSection';
+import { Navbar } from './components/sections/Navbar';
+import { HeroSection } from './components/sections/HeroSection';
+import { MissionSection } from './components/sections/MissionSection';
+import { ProgramsSection } from './components/sections/ProgramsSection';
+import { StorySection } from './components/sections/StorySection';
+import { FiguresSection } from './components/sections/FiguresSection';
+import { HistorySection } from './components/sections/HistorySection';
+import { ReachSection } from './components/sections/ReachSection';
+import { PartnersSection } from './components/sections/PartnersSection';
+import { SupportSection } from './components/sections/SupportSection';
+import { Footer } from './components/sections/Footer';
+import { usePageReveals } from './lib/usePageReveals';
 
 function App() {
+	usePageReveals();
+
 	return (
 		<>
 			<Navbar />
 			<main>
 				<HeroSection />
-				<StatsSection />
 				<MissionSection />
-				<AboutSection />
 				<ProgramsSection />
-				<ValueSection />
-				<DonationSection />
-				<FoundationActivities />
+				<StorySection />
+				<FiguresSection />
+				<HistorySection />
+				<ReachSection />
+				<PartnersSection />
+				<SupportSection />
 			</main>
 			<Footer />
 		</>
