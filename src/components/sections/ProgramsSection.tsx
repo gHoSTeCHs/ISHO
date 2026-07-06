@@ -9,7 +9,7 @@ export function ProgramsSection() {
 					<h2>Five line items, one outcome: a household that can stand on its own.</h2>
 					<p>
 						Each programme is a different entry in the same book. They reinforce one
-						another — a loan is steadier when the borrower is also trained, healthier, and
+						another: a loan is steadier when the borrower is also trained, healthier, and
 						farming better.
 					</p>
 				</div>

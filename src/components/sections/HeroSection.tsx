@@ -28,7 +28,7 @@ export function HeroSection() {
 					</h1>
 					<p className="hero-lede reveal">
 						For four decades ISHO has put credit, training and a kept ledger into the
-						hands of rural women and low-income families across South-East Nigeria — so a
+						hands of rural women and low-income families across South-East Nigeria, so a
 						market stall becomes a livelihood, and a livelihood becomes a future.
 					</p>
 					<div className="hero-cta reveal">

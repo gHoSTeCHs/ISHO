@@ -10,7 +10,7 @@ export function Navbar() {
 		<header className="site-header">
 			<div className="wrap nav">
 				<a className="brand" href="#top">
-					<img src={images.logo} alt="ISHO logo — a raised fist" />
+					<img src={images.logo} alt="ISHO logo, a raised fist" />
 					<span className="brand-text">
 						<b>ISHO</b>
 						<span>Imo Self Help Org.</span>

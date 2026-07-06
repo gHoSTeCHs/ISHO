@@ -15,7 +15,7 @@ export function Footer() {
 						</div>
 						<p className="foot-about">
 							Imo Self Help Organization works to build vibrant, self-reliant communities
-							whose households can stand on their own — through credit, training and a
+							whose households can stand on their own, through credit, training and a
 							kept ledger.
 						</p>
 					</div>

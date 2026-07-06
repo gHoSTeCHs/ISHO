@@ -15,7 +15,7 @@ export function SupportSection() {
 					</p>
 					<h2>Fund the next primary group.</h2>
 					<p>
-						A gift to ISHO is not spent once — it is lent, repaid and lent again. Back a
+						A gift to ISHO is not spent once. It is lent, repaid and lent again. Back a
 						group of women today and your contribution keeps working, member after member,
 						season after season.
 					</p>

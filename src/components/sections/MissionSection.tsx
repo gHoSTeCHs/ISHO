@@ -7,12 +7,12 @@ export function MissionSection() {
 				<div className="mission reveal">
 					<p>
 						<span className="big">To alleviate poverty</span>
-						<span className="big">in South-East Nigeria —</span>
+						<span className="big">in South-East Nigeria,</span>
 						<span className="big">by people, for people.</span>
 					</p>
 					<p className="small">
 						We do it through microfinance and hands-on capacity building in health,
-						education, enterprise and agriculture — meeting the rural poor where they
+						education, enterprise and agriculture, meeting the rural poor where they
 						are, on their own terms. "Self help" is not a slogan here; it is the method.
 					</p>
 				</div>

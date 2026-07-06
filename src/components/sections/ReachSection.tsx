@@ -8,7 +8,7 @@ export function ReachSection() {
 					<p className="eyebrow">Where we work</p>
 					<h2>Ten branches, rooted in rural Imo State.</h2>
 					<p>
-						We work where the need is, not where it is convenient — across the local
+						We work where the need is, not where it is convenient, across the local
 						government areas and dioceses of Imo State, close enough that a field officer
 						knows every group by name.
 					</p>

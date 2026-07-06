@@ -22,7 +22,7 @@ type CopyField = 'accountNumber' | 'paypal';
 const ngoDetails: NGODetails = {
 	name: 'Give to Imo Self Help Organization',
 	tagline:
-		'Your gift is lent, repaid and lent again — it keeps working, member after member.',
+		'Your gift is lent, repaid and lent again. It keeps working, member after member.',
 	accountName: 'Echefu Godson Ogechukwu',
 	accountNumber: '2031656083',
 	bankName: 'First Bank',

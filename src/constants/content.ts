@@ -119,12 +119,12 @@ export const timeline: TimelineItem[] = [
 	{
 		year: '1990',
 		title: 'Imo Self Help Organization is born',
-		body: 'Registered with the Imo State Ministry of Trade & Industries, Cooperative Division — and renamed for the whole state as its scope widened.',
+		body: 'Registered with the Imo State Ministry of Trade & Industries, Cooperative Division, and renamed for the whole state as its scope widened.',
 	},
 	{
 		year: '1995',
 		title: 'On the national register',
-		body: 'Incorporated with the Corporate Affairs Commission (CAC) — the legal backing that opened doors to international partners and a far larger reach.',
+		body: 'Incorporated with the Corporate Affairs Commission (CAC), the legal backing that opened doors to international partners and a far larger reach.',
 	},
 ];
 
@@ -143,7 +143,7 @@ export const branches: Branch[] = [
 
 export const partners: string[] = [
 	'European Union',
-	'UNDP — Nigeria',
+	'UNDP Nigeria',
 	'Five Talents International (USA)',
 	'G.B.F. / MTNF',
 	'Ausaid',
@@ -165,5 +165,5 @@ export const contact: ContactInfo = {
 	],
 	email: 'info@isho-nigeria.org',
 	website: 'www.isho-nigeria.org',
-	director: 'Executive Director — Godson C. Echefu',
+	director: 'Executive Director: Godson Ogechukwu Echefu',
 };
